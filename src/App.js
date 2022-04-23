@@ -1,6 +1,7 @@
 import './App.css';
 import Likes from './Likes';
 import Title from './title';
+import Comments from './Comments';
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
             <Title/>
             <Likes/>
           </div>
+          <Comments/>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;
