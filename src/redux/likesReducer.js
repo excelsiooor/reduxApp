@@ -13,9 +13,11 @@ export const likesReducer = (state = initialState, action) => {
                 Likes: state.Likes + 1
             }
         case DECREMENT:
-            return{
-                ...state,
-                Likes: state.Likes - 1
+            if (state.Likes > 0) {
+                return{
+                    ...state, 
+                    Likes: state.Likes - 1
+                }
             }
             default:
                 return state;
